@@ -1,0 +1,37 @@
+#!/bin/bash
+#PBS -N BlastScript_1
+#PBS -l nodes=1
+#PBS -m abe
+#PBS -M cmmcbride@haverford.edu
+#PBS -e BlastScript_1_Notices
+#PBS -o BlastScript_1_Notices
+
+# BLAST query genes against nucleotide databases. 
+
+tblastn -task tblastn -db /data/christina/BlastSubjectSequences -query /home/christina/OfficialQuerySequences.txt -evalue 1 -outfmt "6 qacc qseqid sseqid sgi sacc qstart qend sstart send qseq sseq evalue length pident nident staxids sscinames scomnames sblastnames sskingdoms stitle sstrand" -max_target_seqs 500000 -out Blast_1_Data
+
+
+
+# qacc: Query accession
+# sseqid: Query Seq-id
+# sgi: Subject GI
+# sacc: Subject Accession
+# qstart: Start of Alignment in Query
+# qend: End of Alignment in Query
+# sstart: Start of Alignment in Subject
+# send: End of Alignment in Query
+# qseq: Aligned Part of Query Sequence
+# sseq: Aligned Part of Subject Sequence
+# evalue: Expect value
+# length: Alignment Length
+# pident: Percentage of Identical Matches
+# nident: number of Identical Matches
+# staxids: unique Subject Taxonomy ID(s)
+# sscinames: unique Subject Scientific Name(s)
+# scomnames: unique Subject Common Name(s)
+# sblastnames: unique Subject Blast Name(s)
+# sskingdoms: unique Subject Super Kingdom(s)
+# stitle: Subject Title
+# sstrand: Subject Strand
+
+
