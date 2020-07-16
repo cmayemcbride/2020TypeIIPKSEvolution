@@ -35,3 +35,4 @@ tblastn -task tblastn -db /data/christina/BlastSubjectSequences -query /home/chr
 # sstrand: Subject Strand
 
 
+
