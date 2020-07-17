@@ -6,7 +6,7 @@
 #PBS -e /home/christina/BlastScript_KS_1_Notices
 #PBS -o /home/christina/BlastScript_KS_1_Notices
 
-# BLAST query genes against nucleotide databases. 
+# BLAST KS query sequences against nt nucleotide database. 
 
 BLASTDB=/data/christina/BlastSubjectSequences
 
