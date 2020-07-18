@@ -1,7 +1,7 @@
 # 2020 Type II PKS Evolution   
 
 ### Welcome! ###       
-Welcome to my GitHub repository for my 2020 Summer Research Project on Type II PKS Evolution! Please see Folder Descriptions to better navigate through my various scripts and files.    
+Welcome to my GitHub repository for my 2020 Summer Research Project on Type II PKS Evolution! As a newbie to GitHub and a novice coder, I hope this repository helps you to understand my work. Please see Folder Descriptions below to better navigate through my various scripts and files. For a "research notebook" style description of my coding work, please reference the Wiki!    
 
 ### Folder Descriptions: ###   
   **Query Sequences:** Assortment of relevant query sequence text files.    
