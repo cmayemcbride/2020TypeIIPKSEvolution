@@ -15,7 +15,8 @@ tblastn -task tblastn -db env_nt -query /home/christina/QuerySequences/KSQuerySe
 
 
 # qacc: Query accession
-# sseqid: Query Seq-id
+# qseqid: Query Seq-id
+# sseqid: Subject Seq-id
 # sgi: Subject GI
 # sacc: Subject Accession
 # qstart: Start of Alignment in Query
