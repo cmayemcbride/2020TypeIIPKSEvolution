@@ -6,4 +6,4 @@ Welcome to my GitHub repository for my 2020 Summer Research Project on Type II P
 ### Folder Descriptions: ###   
   **Query Sequences:** Assortment of relevant query sequence text files.    
   **Blast Script Development:** Drafts of scripts used in BLAST attempts. Only some of these scripts are fully functional!      
-  **Preliminary Raw Data:** Data collected during course of testing BLAST scripts.    
+  **Preliminary Raw Data:** Data collected during course of testing preliminary BLAST scripts. Only used for reference, not for use in further data analysis. 
