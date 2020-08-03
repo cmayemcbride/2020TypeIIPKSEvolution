@@ -1,0 +1,13 @@
+#!/bin/bash
+#PBS -N MAFFTScript_KS_env_nt
+#PBS -l nodes=1:ppn=4
+#PBS -m abe
+#PBS -M cmmcbride@haverford.edu
+#PBS -e /home/christina/MAFFTNotices
+#PBS -o /home/christina/MAFFTNotices
+
+# MAFFT multiple sequence alignment of env_nt sequences.
+
+MAFFT_BINARIES=/opt/mafft/libexec/mafft
+
+/opt/mafft/bin/mafft --auto --quiet /data/christina/FASTA_env_nt.txt > /data/christina/MAFFTData_KS_env_nt.txt 
