@@ -1,0 +1,40 @@
+#!/bin/bash
+#PBS -N BlastScript_CLF_env_nt
+#PBS -l nodes=1:ppn=4
+#PBS -m abe
+#PBS -M cmmcbride@haverford.edu
+#PBS -e /home/christina/BlastNotices3
+#PBS -o /home/christina/BlastNotices3
+
+# BLAST CLF query sequences against env_nt nucleotide database. 
+
+BLASTDB=/data/christina/BlastSubjectSequences
+
+tblastn -task tblastn -db env_nt -query /home/christina/QuerySequences/CLFQuerySequences.txt -evalue 1 -outfmt "6 qacc qseqid sseqid sgi sacc qstart qend sstart send qseq sseq evalue length pident nident staxids sscinames scomnames sblastnames sskingdoms stitle sstrand" -max_target_seqs 10 -out /data/christina/BlastData_CLF_env_nt_2.txt
+
+
+
+# qacc: Query accession
+# qseqid: Query Seq-id
+# sseqid: Subject Seq-id
+# sgi: Subject GI
+# sacc: Subject Accession
+# qstart: Start of Alignment in Query
+# qend: End of Alignment in Query
+# sstart: Start of Alignment in Subject
+# send: End of Alignment in Query
+# qseq: Aligned Part of Query Sequence
+# sseq: Aligned Part of Subject Sequence
+# evalue: Expect value
+# length: Alignment Length
+# pident: Percentage of Identical Matches
+# nident: number of Identical Matches
+# staxids: unique Subject Taxonomy ID(s)
+# sscinames: unique Subject Scientific Name(s)
+# scomnames: unique Subject Common Name(s)
+# sblastnames: unique Subject Blast Name(s)
+# sskingdoms: unique Subject Super Kingdom(s)
+# stitle: Subject Title
+# sstrand: Subject Strand
+
+
